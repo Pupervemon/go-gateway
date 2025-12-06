@@ -49,3 +49,4 @@ logs/
 
 # Nacos 客户端缓存
 cache/
+config/config.yaml
