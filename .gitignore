@@ -1,0 +1,48 @@
+# 编译输出
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+go-gateway
+main.exe
+
+# 依赖目录
+vendor/
+
+# 测试相关
+*.test
+*.out
+coverage.txt
+
+# Go 工作区文件
+go.work
+go.work.sum
+
+# IDE 配置文件
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 日志目录
+logs/
+*.log
+
+# 环境配置文件
+.env
+.env.local
+.env.*.local
+
+# 临时文件
+*.tmp
+*.bak
+*.cache
+
+# Nacos 客户端缓存
+cache/
