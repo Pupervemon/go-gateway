@@ -1,0 +1,63 @@
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"   # 允许所有来源（生产环境建议指定具体域名）
+            allowedHeaders: "*"   # 允许所有头
+            allowedMethods: "*"   # 允许所有方法 (GET, POST, PUT, DELETE等)
+            # allowCredentials: true # 如果前端需要携带 Cookie，需开启此项并将 allowedOrigins 改为 allowedOriginPatterns
+
+# JWT相关配置
+swust:
+  auth:
+    dify-api-key: app-FUxcXi7zdXTpIPnYdkQ4TZTt
+    secret-key: ThisIsMyNewSuperLongAndUltraSecureSecretKeyForHS512AndItIsAwesome123!
+    access-token-expiration-ms: 7200000
+    exclude-paths:
+      # --- 用户/认证相关 ---
+      - /api/user/login                  # 登录
+      - /api/user/register/**            # 注册相关
+      - /api/user/send-code              # 发送验证码
+      - /api/user/password/reset         # 重置密码
+      - /api/user/password/request-reset # 请求重置密码(邮箱)
+      - /api/user/{userId}/profile      # 获取指定用户的公开主页信息
+      
+      # --- 组织架构/基础数据 ---
+      - /api/organization/colleges       # 学院列表 
+      - /api/organization/majors         # 专业列表 
+      - /api/rankings/**                 # 排行榜
+      - /api/announcements/**            # 公告 
+      - /api/user/submission/**          # 获取指定用户的题目状态摘要。
+      - /api/user/statistics/**          # 获取用户总的做题信息数据
+      - /api/user/contributions/**       # 获取指定用户的贡献日历数据
+
+      
+      # --- 题目与训练 ---
+      - /api/user/problem/daily-problem  # 每日一题
+      - /api/statistics/system/recent-week-submissions # 系统数据统计
+      - /api/user/problem/list           # 题目列表
+      - /api/user/problem/problem-tag/** # 题目标签
+      - /api/user/problem/{problemId}    # 题目详情
+      - /api/user/training/list          # 训练单列表
+      - /api/user/training/{id}          # 训练单详情
+      
+      # --- 判题与AI ---
+      - /api/user/judge/**               # 用户判题相关
+      - /api/admin/judge/**              # 管理员判题相关
+      - /api/ai/**                       # AI 相关接口
+      
+      # --- 论坛与消息 ---
+      - /api/forum/comment/page          # 评论分页
+      - /api/forum/post                  # 帖子列表/发布
+      - /api/forum/post/{id}             # 帖子详情
+      - /api/forum/post/problem/**       # 题目相关帖子
+      - /api/forum/tag/**                # 论坛标签
+      - /api/msg/**                      # 消息通知
+      
+      # --- 其他 ---
+      - /api/file/**                     # 文件访问
+      # - /api/admin/problem/            # (原注释) 管理端题目

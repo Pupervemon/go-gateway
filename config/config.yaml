@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+nacos:
+  host: "118.24.164.222" # Nacos 地址
+  port: 8848 # Nacos 端口
+  namespace: "public" # 命名空间ID (如果是public通常可以留空或者写public)
+  group: "DEFAULT_GROUP" # 组名
+  dataid: "gateway.yaml" # 你在 Nacos 上创建的那个配置文件的名字

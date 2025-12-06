@@ -1,0 +1,68 @@
+2025-12-05T17:13:35.379+0800	ERROR	rpc/rpc_client.go:630	Send request fail, request=ConfigQueryRequest, body={"requestId":"","group":"DEFAULT_GROUP","dataId":"gateway.yaml","tenant":"public","module":"config","tag":""}, retryTimes=0, error=client not connected, current status:STARTING
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/common/remote/rpc/rpc_client.go:592
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).requestProxy
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:63
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).queryConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:128
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).getConfigInner
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:198
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).GetConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:166
+go-gateway/config.loadFromNacos
+	E:/Myspace/MyProject/go-gateway/config/config.go:107
+go-gateway/config.InitConfig
+	E:/Myspace/MyProject/go-gateway/config/config.go:76
+main.main
+	E:/Myspace/MyProject/go-gateway/main.go:14
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:285
+runtime.goexit
+	C:/Program Files/Go/src/runtime/asm_amd64.s:1693
+2025-12-05T17:13:35.483+0800	ERROR	rpc/rpc_client.go:630	Send request fail, request=ConfigQueryRequest, body={"requestId":"","group":"DEFAULT_GROUP","dataId":"gateway.yaml","tenant":"public","module":"config","tag":""}, retryTimes=1, error=client not connected, current status:STARTING
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/common/remote/rpc/rpc_client.go:592
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).requestProxy
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:63
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).queryConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:128
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).getConfigInner
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:198
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).GetConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:166
+go-gateway/config.loadFromNacos
+	E:/Myspace/MyProject/go-gateway/config/config.go:107
+go-gateway/config.InitConfig
+	E:/Myspace/MyProject/go-gateway/config/config.go:76
+main.main
+	E:/Myspace/MyProject/go-gateway/main.go:14
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:285
+runtime.goexit
+	C:/Program Files/Go/src/runtime/asm_amd64.s:1693
+2025-12-05T17:13:35.583+0800	ERROR	rpc/rpc_client.go:630	Send request fail, request=ConfigQueryRequest, body={"requestId":"","group":"DEFAULT_GROUP","dataId":"gateway.yaml","tenant":"public","module":"config","tag":""}, retryTimes=2, error=client not connected, current status:STARTING
+github.com/nacos-group/nacos-sdk-go/v2/common/remote/rpc.(*RpcClient).Request
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/common/remote/rpc/rpc_client.go:592
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).requestProxy
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:63
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigProxy).queryConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_proxy.go:128
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).getConfigInner
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:198
+github.com/nacos-group/nacos-sdk-go/v2/clients/config_client.(*ConfigClient).GetConfig
+	C:/Users/31465/go/pkg/mod/github.com/nacos-group/nacos-sdk-go/v2@v2.3.5/clients/config_client/config_client.go:166
+go-gateway/config.loadFromNacos
+	E:/Myspace/MyProject/go-gateway/config/config.go:107
+go-gateway/config.InitConfig
+	E:/Myspace/MyProject/go-gateway/config/config.go:76
+main.main
+	E:/Myspace/MyProject/go-gateway/main.go:14
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:285
+runtime.goexit
+	C:/Program Files/Go/src/runtime/asm_amd64.s:1693
+2025-12-05T17:13:35.684+0800	ERROR	config_client/config_client.go:201	get config from server error:client not connected, current status:STARTING, dataId=gateway.yaml, group=DEFAULT_GROUP, namespaceId=public
+2025-12-05T17:40:04.727+0800	ERROR	cache/disk_cache.go:61	mkdir cacheDir failed,cacheDir:./cache/nacos\naming\f0202b3a-8aec-4692-bb4b-a233e32dd987,err:%!(EXTRA *fs.PathError=mkdir E:\Myspace\MyProject\go-gateway\./cache/nacos: The system cannot find the path specified.)
+2025-12-05T17:47:17.852+0800	ERROR	cache/disk_cache.go:61	mkdir cacheDir failed,cacheDir:./cache/nacos\naming\f0202b3a-8aec-4692-bb4b-a233e32dd987,err:%!(EXTRA *fs.PathError=mkdir E:\Myspace\MyProject\go-gateway\./cache/nacos: The system cannot find the path specified.)
+2025-12-05T17:56:20.625+0800	ERROR	cache/disk_cache.go:61	mkdir cacheDir failed,cacheDir:./cache/nacos\naming\f0202b3a-8aec-4692-bb4b-a233e32dd987,err:%!(EXTRA *fs.PathError=mkdir E:\Myspace\MyProject\go-gateway\./cache/nacos: The system cannot find the path specified.)
+2025-12-06T12:08:02.256+0800	ERROR	cache/disk_cache.go:61	mkdir cacheDir failed,cacheDir:./cache/nacos\naming\f0202b3a-8aec-4692-bb4b-a233e32dd987,err:%!(EXTRA *fs.PathError=mkdir E:\Myspace\MyProject\go-gateway\./cache/nacos: The system cannot find the path specified.)
