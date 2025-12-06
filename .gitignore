@@ -44,5 +44,8 @@ logs/
 *.bak
 *.cache
 
+# 缓存目录
+.claude/
+
 # Nacos 客户端缓存
 cache/

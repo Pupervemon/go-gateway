@@ -16,14 +16,14 @@ func InitNacos() {
 	// 创建 ServerConfig
 	serverConfigs := []constant.ServerConfig{
 		{
-			IpAddr: "118.24.164.222",
+			IpAddr: "127.0.0.1",
 			Port:   8848,
 		},
 	}
 
 	// 创建 ClientConfig
 	clientConfig := constant.ClientConfig{
-		NamespaceId:         "f0202b3a-8aec-4692-bb4b-a233e32dd987", // 如果需要可配置命名空间ID
+		NamespaceId:         "", // 如果需要可配置命名空间ID
 		TimeoutMs:           5000,
 		NotLoadCacheAtStart: true,
 		LogDir:              "./logs/nacos",
