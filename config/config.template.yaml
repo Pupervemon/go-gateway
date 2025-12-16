@@ -17,10 +17,15 @@ nacos:
   namespace: "public"    # 命名空间ID (public为默认命名空间)
   group: "DEFAULT_GROUP" # 配置分组名
   dataid: "gateway.yaml" # 远程配置文件名 (需在Nacos控制台创建)
+  routes-dataid: "routes.json" # 路由配置文件名 (需在Nacos控制台创建)
 
 # ==========================================
 # 注意事项：
 # - 此文件为模板，不要直接使用
-# - 实际的业务配置（如JWT密钥、服务白名单等）存储在 Nacos 中
+# - 实际的业务配置（如JWT密钥、服务白名单等）存储在 Nacos 的 gateway.yaml 中
+# - 路由配置存储在 Nacos 的 routes.json 中，支持动态路由和负载均衡
+# - 路由配置支持两种URI格式：
+#   1. lb://service-name - 使用Nacos服务发现进行负载均衡
+#   2. https://domain.com/path - 直接转发到外部服务
 # - 确保Nacos服务器可访问，否则网关无法启动
 # ==========================================

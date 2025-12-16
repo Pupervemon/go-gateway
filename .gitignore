@@ -45,8 +45,12 @@ logs/
 *.cache
 
 # 缓存目录
-.claude/
+.claude/cache/
+tmp/
+
+# Claude 设置文件
+.claude/settings.local.json
+.claude/settings.*.json
 
 # Nacos 客户端缓存
-cache/
 config/config.yaml
